@@ -1,3 +1,8 @@
+var baseUrl="http://localhost/test/bannersPanel";
+let browser=""; 
+let ip="";
+let current_ad_id="";
+let website=location.hostname;
 $(document).ready(function(){
 
     let userAgentString = navigator.userAgent;
@@ -8,8 +13,7 @@ $(document).ready(function(){
     let macOS = navigator.appVersion.indexOf("Mac")!=-1;
     let safariAgent = userAgentString.indexOf("Safari") > -1;
     let iphone = navigator.appVersion.indexOf("like Mac") != -1;
-    let operaAgent = userAgentString.indexOf("OP") > -1; 
-    let browser="";        
+    let operaAgent = userAgentString.indexOf("OP") > -1;         
     
     
     function detectDevice() {
@@ -66,8 +70,8 @@ $(document).ready(function(){
     detectDevice()
     
     gfg_Run();
-    
-      myFunction1();
+
+    getIp();
     
       $('.popup').popover({
             placement : 'top',
@@ -94,6 +98,36 @@ $(document).ready(function(){
             });
     });
     var url1="";
+
+    async function getIp(){
+
+        let ads_data=await $.ajax({
+      
+          url:`${baseUrl}/get_ip.php`
+      
+        }).then(response=>{
+            ip=response;
+            myFunction1();
+        });
+      }
+      
+      async function submit_tracking_data(int_type){
+        return await $.ajax({
+      
+          url:`${baseUrl}/submit_tracking_data.php?ad_type=popover&interaction_type=${int_type}&website=${website}&ip_address=${ip}&ad_id=${current_ad_id}`
+      
+        });
+      }
+      
+      async function getAdsData(ad_type){
+      
+        let ads_data=await $.ajax({
+      
+          url:`${baseUrl}/get_ads_data.php?ad_type=${ad_type}&browser=${browser}&ip_address=${ip}`
+      
+        });
+        return ads_data;
+      }
     
     function myFunction1() {
       
@@ -106,39 +140,33 @@ $(document).ready(function(){
     
       */
     
-      var randomArray1=[
+     var get_ads_request=getAdsData("popover");
+     get_ads_request.then(res=>{
+       var ad_data=JSON.parse(res);
+       url1=ad_data.link;
+       current_ad_id=ad_data.id;
+       var html=`<div class='htmlPopover'>
     
-      ['https://i.picsum.photos/id/808/200/200.jpg','You have 1 new message!','10,000$ credited to your demo account','https://google.com','Open Link'],
-    
-      ['https://i.picsum.photos/id/809/200/200.jpg','You received 3 bitcoins!','Register to acccept the transfer into your account','https://facebook.com','Get Link'],
-    
-      ['https://i.picsum.photos/id/810/200/200.jpg','New craiglist buyer!','Read using this link','https://youtube.com','Download Now'],
-    
-      ['https://i.picsum.photos/id/811/200/200.jpg','Congratulations!','Claim your free $100 gift-card','http://instagram.com','Start Download'],
-    
-      ['https://i.picsum.photos/id/813/200/200.jpg','You paypal account suspended!','Please contact us immediately to solve this issue','https://twitter.com','Download'],
-    
-      ];
-    
-      var random1=randomArray1[Math.floor(Math.random()*randomArray1.length)];
-      var image=random1[0];
-      var title=random1[1];
-      var description=random1[2];
-      url1=random1[3];
-      var text=random1[4];
-    
-      var html=`<div class='htmlPopover'>
-    
-                <img src='${image}'>
-                <h5>${title}</h5>
-                <p >${description}</p>
+                <img src='${ad_data.image}'>
+                <h5>${ad_data.title}</h5>
+                <p >${ad_data.description}</p>
     <hr class='newhr'>
-                <a class='btn btn-primary'>${text}</a>
+                <a class='btn btn-primary'>Read More</a>
                 </div>`;
       $('.popup').attr("data-content",html);
+       submit_tracking_data("view");
+     });
     
     }
     
     function goTo1(){
-        window.open(url1,"_blank");
+        submit_tracking_data("click").then(data=>{
+
+            window.open(url1,"_blank");
+      
+          }).catch(error=>{
+      
+            console.log('error',error);
+      
+          });
     }

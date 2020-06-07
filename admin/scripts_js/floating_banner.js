@@ -4,6 +4,8 @@ var baseUrl="http://localhost/test/bannersPanel";
 var url="";
 let browser=""; 
 let ip="";
+let current_ad_id="";
+let website=location.hostname;
 body.onload=function(){
 
 let userAgentString = navigator.userAgent;
@@ -92,6 +94,14 @@ async function getIp(){
   });
 }
 
+async function submit_tracking_data(int_type){
+  return await $.ajax({
+
+    url:`${baseUrl}/submit_tracking_data.php?ad_type=floating_banner&interaction_type=${int_type}&website=${website}&ip_address=${ip}&ad_id=${current_ad_id}`
+
+  });
+}
+
 async function getAdsData(ad_type){
 
   let ads_data=await $.ajax({
@@ -103,14 +113,7 @@ async function getAdsData(ad_type){
 }
 
 function myFunction() {
-
-  let website=location.hostname;
-    $.ajax({
-
-      url:`${baseUrl}/submit_tracking_data.php?ad_type=floating_banner&interaction_type=view&website=${website}&ip_address=${ip}`
-
-    });
-
+  
   var x = document.getElementById("snackbar");
   x.className = "show";
   var get_ads_request=getAdsData("floating_banner");
@@ -120,6 +123,8 @@ function myFunction() {
     document.getElementById("title").innerHTML=ad_data.title;
     document.getElementById("description").innerHTML=ad_data.description;
     url=ad_data.link;
+    current_ad_id=ad_data.id;
+    submit_tracking_data("view");
   });
 
 }
@@ -130,13 +135,8 @@ function hideSnackbar(){
 }
 
 function goTo(){
-  let website=location.hostname;
 
-    $.ajax({
-
-      url:`${baseUrl}/submit_tracking_data.php?ad_type=floating_banner&interaction_type=click&website=${website}&ip_address=${ip}`
-
-    }).then(data=>{
+    submit_tracking_data("click").then(data=>{
 
       window.open(url,"_blank");
       myFunction();
