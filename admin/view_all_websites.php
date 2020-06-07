@@ -26,12 +26,11 @@ function deleteDir($dirPath) {
 
 if(isset($_GET['delete'])){
 	$id=$_GET['delete'];
-	$url="../".$GET['url'];
-	echo $url;
-	// deleteDir("../$url");
-	// $delete=query("DELETE from websites where id='$id'");
-	// $_SESSION['success_msg']="Website successfully removed !";
-	// header("Location:view_all_websites.php");
+	$url="../".$_GET['url'];
+	deleteDir("../$url");
+	$delete=query("DELETE from websites where id='$id'");
+	$_SESSION['success_msg']="Website successfully removed !";
+	header("Location:view_all_websites.php");
 }
 
 ?>
