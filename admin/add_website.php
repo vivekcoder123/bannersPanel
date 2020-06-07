@@ -2,9 +2,6 @@
 
 <?php  
 
-$css=array();
-$js=array();
-
 function custom_copy($src, $dst) {  
   	
     $dir = opendir($src);  
@@ -23,11 +20,9 @@ function custom_copy($src, $dst) {
             else {  
                 copy($src . '/' . $file, $dst . '/' . $file);  
                 if(strpos($file,".css")!==false){
-                	array_push($css,$file);
-                	var_dump($css);
+                	array_push($_SESSION['css'],$dst."/".$file);
                 }else if(strpos($file,".js")!==false){
-                	array_push($js,$file);
-                	var_dump($js);
+                	array_push($_SESSION['js'],$dst."/".$file);
                 }
             }  
         }  
@@ -37,6 +32,9 @@ function custom_copy($src, $dst) {
 }  
 
 if(isset($_POST['submit'])){
+
+	$_SESSION['css']=array();
+	$_SESSION['js']=array();
 
 	$name=escape($_POST['name']);
 	$url=escape($_POST['url']);
@@ -56,10 +54,12 @@ if(isset($_POST['submit'])){
 		$insert_website =query("INSERT into websites(name,url) VALUES('$name','$url')");
 		confirm($insert_website);
 		$website_id = mysqli_insert_id($connection);
-		$css=implode(',',$css);
-		$js=implode(',',$js);
+		$css=implode(',',$_SESSION['css']);
+		$js=implode(',',$_SESSION['js']);
 		$insert_scripts_links=query("INSERT into scripts_links(website_id,css,js) VALUES('$website_id','$css','$js')");
 		confirm($insert_scripts_links);
+		$_SESSION['css']="";
+		$_SESSION['js']="";
 		$_SESSION['success_msg']="Website added successfully !";
 		header("Location:view_all_websites.php");
 	}
