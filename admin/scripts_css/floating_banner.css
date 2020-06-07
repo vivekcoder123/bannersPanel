@@ -1,0 +1,100 @@
+#snackbar {
+    visibility: hidden;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+   box-shadow: 1px 1px 4px 0px black;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    top: 4%;
+    font-size: 17px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Varela', sans-serif;
+    opacity: 0.97;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+  }
+  h4,p{
+    margin:0px;
+    padding:0 0 4px;
+  }
+  
+  .hnew{
+  font-family: inherit;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: .1rem;
+      color: #32325d;
+  font-size: 1.25rem;
+  }
+  
+  .p1{
+  margin:0px;
+  Padding:0px;
+  line-height:1.4;
+  
+  }
+  
+  #snackbar img{
+    width:100px;
+    height:60px;
+  }
+  
+  @media only screen and (max-width: 400px){
+    #snackbar{
+      width:90%;
+      left:5%;
+      font-size:0.8em;
+    }
+    #snackbar img{
+      width:80px;
+      height:40px;
+    }
+  }
+  
+  @media only screen and (min-width:401px) and (max-width: 500px){
+    #snackbar{
+      width:90%;
+      left:5%;
+    }
+  }
+  
+  @media only screen and (min-width:501px) and (max-width: 600px){
+    #snackbar{
+      width:50%;
+      left:22%;
+      font-size:0.7em;
+    }
+    #snackbar img{
+      width:80px;
+      height:40px;
+    }
+  }
+  
+  
+  @media only screen and (min-width:601px) and (max-width: 800px){
+    #snackbar{
+      width:50%;
+      left:24%;
+      font-size:0.8em;
+    }
+    #snackbar img{
+      width:80px;
+      height:40px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 801px){
+    #snackbar{
+      width:24rem;
+      right:5%;
+      font-size:0.9em;
+    }
+  }
