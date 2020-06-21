@@ -1,0 +1,280 @@
+   .bc-banner{
+      position:relative;
+      border:1px solid #ccc;
+      overflow:hidden;
+      background-color: black;
+   }
+   .bc-banner a {
+      text-decoration:none;
+      color:#fff;
+   }
+   .bc-banner a:hover {
+      opacity:0.8;
+   }
+   .bc-banner-header {
+      background-color:#fff;
+      position:relative;
+      z-index:2;
+      padding:16px;
+   }
+   
+   .bc-banner-body {
+      z-index:2;
+      padding:32px;
+      text-align: initial;
+   }
+   .bc-banner .bc-banner-cover {
+      position:absolute;
+      opacity: 0.3;
+      filter: alpha(opacity=30);
+      object-fit: cover;
+      top:0;
+      z-index:1;
+      height: 100%;
+      width: 100%;
+   }
+
+   .downloadBtn{
+      background-color: #f00c32;color:white !important;font-weight:bold;margin-left:0%;
+   }
+
+   .open{
+      border-radius:20px !important;
+      padding: 2%;
+      font-size: 10px;
+      background-color: #007bff;color:white !important;font-weight:bold;
+      margin-left:0%;
+    }
+
+   @media only screen and (max-width:400px){
+      .bc-banner .row{
+         margin-left:2%;
+         margin-right:2%;
+      }
+      .bc-banner {
+         margin-left: 10%;
+         margin-right: 10%;
+      }
+      .bc-banner-body{
+         padding:16px;
+      }
+      @media only screen and (max-width:350px){
+         .bc-banner{
+            height:224px;
+         }
+      }
+      @media only screen and (min-width:351px) and (max-width:400px){
+         .bc-banner{
+            height:192px;
+         }
+      }
+      .adsDiv{
+         position:relative;top:3rem;display:flex;justify-content:space-between;
+      }  
+      .adsText{
+         font-size:26px;font-weight:bold;width:45%;color:#dc3545;
+      }
+      .adsButton{
+         padding:4%;font-size: 10px;border-radius:0px !important;width:100%;
+      }
+      .adsDisplay,.adsClosed{
+         margin:2% auto !important;width:50%;
+      }
+      .ads_format3 .adsButton{
+         border-radius:20px !important;
+      }
+   }
+
+   @media only screen and (min-width:401px) and (max-width:800px){
+      .bc-banner .row{
+         margin-left:2%;
+         margin-right:2%;
+      }
+      .bc-banner {
+         margin-left: 10%;
+         margin-right: 10%;
+         height:192px;
+      }
+      .adsText{
+         font-size:26px;font-weight:bold;width:45%;color:#dc3545;
+      }
+      .adsButton{
+         padding:4%;font-size: 10px;border-radius:0px !important;width:100%;
+      }
+      .adsDiv{
+         position:relative;top:2rem;display:flex;justify-content:space-between;
+      }
+      .adsDisplay,.adsClosed{
+         margin:2% auto !important;width:50%;
+      }
+      .ads_format3 .adsButton{
+         border-radius:20px !important;
+      }
+   }
+
+   @media only screen and (min-width:801px){
+
+      .bc-banner {
+         margin-left: 35%;
+         margin-right: 35%;
+         height:248px;
+      }
+
+      .adsText{
+         font-size:22px;font-weight:bold;width:45%;color:#dc3545;
+      }
+      .adsButton{
+         padding:10px 12px;font-size: 10px;border-radius:0px;width:45%;
+      }
+      .adsDiv{
+         position:relative;top:5rem;display:flex;justify-content:space-between;
+      }
+      .adsDisplay,.adsClosed{
+         margin:2% auto !important;width:30%;
+      }
+      .downloadBtn{
+         margin-left:25%;
+      }
+      .open{
+         margin-left:16%;
+      }
+   }
+
+   .secondBanner{
+      height:auto;
+    }
+   .secondBanner p{
+      color:#777;
+      text-align: left !important;
+    }
+    .secondBannerTop{
+      float:right;height:22px;width:13px;display: flex;position:relative;top: 0rem;background-color:#fff;color:#39b;font-weight:bold;left:-2rem;
+    }
+    .downloadBtn:hover{
+      background-color:#0088ff;
+      color:white !important;
+    }
+    .open:hover{
+      background-color:#0088ff;
+      color:white !important;
+    }
+    .ads_format4 .btn-outline-primary{
+      border-radius:20px !important;
+      font-size:23px;
+      background-color:#4b4fa6 !important;
+      border-color:#4b4fa6 !important;
+      color:white !important;
+    }
+
+   @media only screen and (min-width:801px){
+      .ads_format4 .btn-outline-primary{
+         font-size:19px;
+      }
+   }
+
+   .lastBanner{
+      margin-left:0%;
+      margin-right:0%;
+      border:0px;
+      height:auto;
+   }
+
+   .adsClosed{
+     background-color: #eee;
+     height:160px;
+     margin-top:2%;
+     margin-bottom:2%;
+   }
+
+   .stopBtn{
+      color:white !important;
+      cursor:pointer;
+   }
+
+   .closeBtn{
+      cursor:pointer;
+   }
+
+   .ads_format4 img{
+      float:right;
+      width:24px;
+      margin-top:4px;
+   }
+
+   .adsButton1{
+      color:#4e73df !important;
+   }
+
+   .adsButton1:hover{
+      background-color:white !important;
+      color:#4b4fa6 !important;
+   }
+   .ads_format1,.ads_format2,.ads_format3,.ads_format4{
+       display:none;
+   }
+   .fa.fa-info-circle{
+      cursor: pointer;
+   }
+   .ads_format4 .flex{
+      justify-content: space-around;
+   }
+
+   .ads_format4 .flex a{
+      padding: 0.5% 2%;
+   }
+
+   .ads_format4 .fa.fa-info-circle{
+      position: relative;
+      color: #4b4fa6;
+      float: right;
+   }
+
+   .ads_format4 .bc-banner{
+      border: 2px dotted #ccc;
+      border-left:0px !important;
+      border-right:0px !important;
+   }
+
+   @media only screen and (min-width:701px){
+      .ads_format4 .flex a{
+         width:47%;
+      }
+      .ads_format4 .flex{
+         padding:0% 6%;
+      }
+      .ads_format4 .fa.fa-info-circle{
+         top: -1.05rem;
+         left: 16px;
+      }
+      .ads_format4 .bc-banner{
+         padding: 2%;
+      }
+   }
+
+   @media only screen and (max-width:700px){
+      .ads_format4 .flex a{
+         width:100%;
+      }
+      .ads_format4 .flex{
+         padding:0%;
+      }
+      .ads_format4 .fa.fa-info-circle{
+         top: -0.4rem;
+         left: 4px;
+      }
+      .ads_format4 .bc-banner{
+         padding: 4% 2%;
+      }
+   }
+
+   .ads_format4 .sponsoredSearch{
+      top: 2.2rem;
+      z-index: 1;
+      background: white;
+      padding-right: 0.4rem;
+      font-size: 12px;
+      color: #777;
+      font-weight: 500;
+      padding-left:0.2rem;
+      position:relative;
+   }

@@ -1,5 +1,10 @@
 <?php  
 session_start();
+if(isset($_SESSION['admin'])){
+    $url="login.php";
+}else{
+    $url="../login.php";
+}
 session_destroy();
-header("Location:login.php");
+header("Location:$url");
 ?>

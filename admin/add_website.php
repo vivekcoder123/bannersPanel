@@ -38,6 +38,9 @@ if(isset($_POST['submit'])){
 
 	$name=escape($_POST['name']);
 	$url=escape($_POST['url']);
+	$url=str_replace(["http://","https://"],"",$url);
+	$url="pub/".$url;
+	$user_id=escape($_POST['user_id']);
 	$scripts=array('scripts_css','scripts_js');
 	$dst = "../$url";
 
@@ -51,7 +54,7 @@ if(isset($_POST['submit'])){
 		$_SESSION['error_msg']="This website url is already added to the websites list !";
 		header("Location:add_website.php");
 	}else{
-		$insert_website =query("INSERT into websites(name,url) VALUES('$name','$url')");
+		$insert_website =query("INSERT into websites(name,url,user_id) VALUES('$name','$url','$user_id')");
 		confirm($insert_website);
 		$website_id = mysqli_insert_id($connection);
 		$css=implode(',',$_SESSION['css']);
@@ -74,6 +77,7 @@ if(isset($_POST['submit'])){
 <h2 class="text-center">Add Website</h2>
 
   <form action="" method="post" style="margin-top:5%;">
+    <input type="hidden" value="<?php echo isset($_SESSION['user'])?$_SESSION['user']->id:"" ?>" name="user_id">
   	<div class="form-group">
   		<input type="text" placeholder="Enter Name" class="form-control" required name="name">
   	</div>

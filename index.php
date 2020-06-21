@@ -288,14 +288,7 @@
 		</div>
 
 		</div><div id="radiantthemes_social_widget-3" class="widget matchHeight widget_radiantthemes_social_widget">							<h2 class="widget-title">FOLLOW US</h2>
-				<ul class="social">
-										<li class="facebook"><a href="https://www.facebook.com/propellerads/" target=&quot;_blank&quot;><i class="fa fa-facebook"></i></a></li>
-										<li class="twitter"><a href="https://twitter.com/propellerads" target=&quot;_blank&quot;><i class="fa fa-twitter"></i></a></li>
-													<li class="youtube"><a href="https://www.youtube.com/channel/UCmrS5O48CFDW8pwhFcYEc5A" target=&quot;_blank&quot;><i class="fa fa-youtube-play"></i></a></li>
-													<li class="linkedin"><a href="https://www.linkedin.com/company/propeller-ads-media" target=&quot;_blank&quot;><i class="fa fa-linkedin"></i></a></li>
-																			<li class="vkontakte"><a href="https://vk.com/propellerads" target=&quot;_blank&quot;><i class="fa fa-vk"></i></a></li>
-																			<li class="instagram"><a href="https://www.instagram.com/propellerads/" target=&quot;_blank&quot;><i class="fa fa-instagram"></i></a></li>
-											</ul>
+			
 
 		</div>				</div>
 				<!-- hamburger-menu-main -->
@@ -572,72 +565,41 @@ Learn to earn</h2>
 	</div>
 	<!-- #page -->
 
-<!-- wraper_footer --><footer class='wraper_footer custom-footer'><div class='container'><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1553271024486 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544097991593"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1552156425445" >About</h6><div style="font-size: 14px;color: #cfd3e5;line-height: 22px;text-align: left" class="vc_custom_heading font-weight-regular vc_custom_1552156350748" >Propeller Ads is a full and self-service advertising network providing comprehensive and industry leading ad-serving and optimization technologies for online marketers and web publishers.</div><div class="radiantthemes-social-widget rt51720554 element-four " ><ul class="radiantthemes-social-widget-buttons"><li class="facebook"><a href="https://www.facebook.com/propellerads/"  target=&quot;_blank&quot;><i class="fa fa-facebook"></i></a></li><li class="twitter"><a href="https://twitter.com/propellerads"  target=&quot;_blank&quot;><i class="fa fa-twitter"></i></a></li><li class="youtube"><a href="https://www.youtube.com/channel/UCmrS5O48CFDW8pwhFcYEc5A"  target=&quot;_blank&quot;><i class="fa fa-youtube"></i></a></li><li class="linkedin"><a href="https://www.linkedin.com/company/propeller-ads-media"  target=&quot;_blank&quot;><i class="fa fa-linkedin"></i></a></li><li class="vkontakte"><a href="https://vk.com/propellerads"  target=&quot;_blank&quot;><i class="fa fa-vk"></i></a></li><li class="instagram"><a href="https://www.instagram.com/propellerads/"  target=&quot;_blank&quot;><i class="fa fa-instagram"></i></a></li></ul></div><!-- social --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544098003810"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1552156371520" >Resources</h6><!-- list --><div class="radiantthemes-list rt1333965524 element-four    " >
-<ul>
- 	<li><a href="https://propellerads.com/blog/">Blog</a></li>
- 	<li><a href="https://propellerads.com/knowledge-center/adv-case-studies/">Case Studies</a></li>
- 	<li><a href="https://propellerads.com/knowledge-center/webinars/">On-Demand Webinars</a></li>
- 	<li><a href="https://propellerads.com/events/">Events</a></li>
- 	<li><a href="https://propellerads.com/blog/category/more/our-news/">Our News</a></li>
+<!-- wraper_footer --><footer class='wraper_footer custom-footer'>
+<div class='container'>
+<div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1553271024486 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544097991593"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1552156425445" >About</h6><div style="font-size: 14px;color: #cfd3e5;line-height: 22px;text-align: left" class="vc_custom_heading font-weight-regular vc_custom_1552156350748" >Dlmonitize is a full and self-service advertising network providing comprehensive and industry leading ad-serving and optimization technologies for online marketers and web publishers.</div><div class="radiantthemes-social-widget rt51720554 element-four " >
+
+ 	<!-- <li><a href="https://propellerads.com/blog/">Blog</a></li> -->
 </ul>
-</div><!-- list --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544098026209"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1559212242797" >Our Key Features</h6><!-- list --><div class="radiantthemes-list rt2060536050 element-four    " >
+</div><!-- list -->
+</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544098026209"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1559212242797" >Our Key Features</h6><!-- list --><div class="radiantthemes-list rt2060536050 element-four    " >
 <ul>
- 	<li><a href="https://propellerads.com/advertisers/self-serve-platform/">Self-Serve Ad Platform</a></li>
- 	<li>Push Ads Traffic</li>
- 	<li>CPA Goal 2.0</li>
- 	<li>Auto Optimization</li>
+ 	<!-- <li>Auto Optimization</li> -->
 </ul>
-</div><!-- list --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1544098042540"><div class="wpb_wrapper"><h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1552736205233" >Contact Us</h6>
+</div><!-- list --></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12">
+<div class="vc_column-inner vc_custom_1544098042540">
+<div class="wpb_wrapper">
+<h6 style="font-size: 21px;color: #ffffff;line-height: 30px;text-align: left" class="vc_custom_heading font-weight-semibold vc_custom_1552736205233" >Contact Us</h6>
 	<div class="wpb_text_column wpb_content_element  footer_contacts" >
-		<div class="wpb_wrapper">
+		<!-- <div class="wpb_wrapper">
 			<p><a href="https://help.propellerads.com/">Support &amp; Knowledge Center</a></p>
 <p>contact.us@propellerads.com</p>
 <p>+35725281664</p>
 
-		</div>
+		</div> -->
 	</div>
 
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+<div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1553270900599 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper"><!-- radiantthemes-custom-menu --><div class="radiantthemes-custom-menu element-two rt653666296 "    ></div><!-- radiantthemes-custom-menu --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
-			<div style="padding-top: 20px;"><img style="height: 35px;" src="https://propellerads.com/wp-content/uploads/2016/07/visa_pos_fc.png" /> <img style="height: 35px;" src="https://propellerads.com/wp-content/uploads/2016/07/visa_electron_pos_fc.png" /> <img style="height: 35px;" src="https://propellerads.com/wp-content/uploads/2017/02/mc_acc_rgb-logo.png" alt="mc_accpt_png" /> <img style="height: 35px;" src="https://propellerads.com/wp-content/uploads/2017/02/ms_acc_rgb-logo.png" alt="ms_accpt_png" /></div>
-
-		</div>
-	</div>
-</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1553270900599 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper"><!-- radiantthemes-custom-menu --><div class="radiantthemes-custom-menu element-two rt653666296 "    ><ul id="menu-footer_menu" class="menu"><li id="menu-item-13842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13842"><a href="https://propellerads.com/terms/">Terms</a></li>
-<li id="menu-item-12416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12416"><a href="https://propellerads.com/privacy/">Privacy Policy</a></li>
-<li id="menu-item-12417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12417"><a href="https://propellerads.com/cookies/">Cookies Policy</a></li>
-<li id="menu-item-13259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13259"><a href="https://propellerads.com/opt-out/">Opt-Out</a></li>
-</ul></div><!-- radiantthemes-custom-menu --></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element " >
-		<div class="wpb_wrapper">
-			<p>Copyright © PropellerAds.com 2011 - 2020</p>
+			<p>Copyright © DlMonitize.com 2011 - 2020</p>
 
 		</div>
 	</div>
 </div></div></div></div><div class="vc_row-full-width vc_clearfix"></div></div></footer><!-- wraper_footer -->
-<script type="text/javascript">var _kmq = _kmq || [];
-var _kmk = _kmk || '564b14f320b90346f9a010175c42a4e2d4121ad1';
-function _kms(u){
-  setTimeout(function(){
-    var d = document, f = d.getElementsByTagName('script')[0],
-    s = d.createElement('script');
-    s.type = 'text/javascript'; s.async = true; s.src = u;
-    f.parentNode.insertBefore(s, f);
-  }, 1);
-}
-_kms('//i.kissmetrics.com/i.js');
-_kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
-</script>
-
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T7VRPB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T7VRPB');</script>
-<!-- End Google Tag Manager -->
 
 </div>
 <!-- radiantthemes-website-layout -->

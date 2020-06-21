@@ -2,7 +2,7 @@
 ob_start();
 session_start();
 include("functions.php");
-if(!isset($_SESSION['admin']) && strpos($_SERVER['REQUEST_URI'],'login')===false){
+if(!isset($_SESSION['admin']) && !isset($_SESSION['user']) && strpos($_SERVER['REQUEST_URI'],'login')===false){
   header("Location:login.php");
 }
 ?>
@@ -76,6 +76,10 @@ if(!isset($_SESSION['admin']) && strpos($_SERVER['REQUEST_URI'],'login')===false
         </div>
       </li>
 
+      <?php 
+      if(isset($_SESSION['admin'])){
+      ?>
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
@@ -88,6 +92,8 @@ if(!isset($_SESSION['admin']) && strpos($_SERVER['REQUEST_URI'],'login')===false
           </div>
         </div>
       </li>
+
+      <?php } ?>
 
       <!-- Nav Item - Utilities Collapse Menu -->
 <!--       <li class="nav-item">
@@ -147,13 +153,13 @@ if(!isset($_SESSION['admin']) && strpos($_SERVER['REQUEST_URI'],'login')===false
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php isset($_SESSION['admin'])?"Admin":$_SESSION['user']->fname?></span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="logout.php" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="logout.php">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>

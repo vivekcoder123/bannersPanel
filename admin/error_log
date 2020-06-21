@@ -1,0 +1,14 @@
+[14-Jun-2020 22:50:39 Asia/Kolkata] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home4/dlget1qm/dlmonitize.com/admin/view_all_websites.php on line 63
+[14-Jun-2020 22:58:20 Asia/Kolkata] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home4/dlget1qm/dlmonitize.com/admin/view_all_websites.php on line 72
+[14-Jun-2020 23:05:02 Asia/Kolkata] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home4/dlget1qm/dlmonitize.com/admin/view_all_websites.php on line 72
+[14-Jun-2020 23:05:25 Asia/Kolkata] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home4/dlget1qm/dlmonitize.com/admin/view_all_websites.php on line 72
+[14-Jun-2020 23:05:30 Asia/Kolkata] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, bool given in /home4/dlget1qm/dlmonitize.com/admin/view_all_websites.php on line 72
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//floating_banner.css): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//ads_format.css): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//popover.css): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//ads_format3.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//popover.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//ads_format2.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//ads_format1.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//floating_banner.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
+[15-Jun-2020 11:02:49 Asia/Kolkata] PHP Warning:  copy(../https://dlapkmod.com//ads_format4.js): failed to open stream: No such file or directory in /home4/dlget1qm/dlmonitize.com/admin/add_website.php on line 21
